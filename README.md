@@ -40,4 +40,25 @@ Then you open a file named example.txt. You can add contents into it after press
 
 Please play around with vi editors to get familiar with it.
 
+### c5. create a directory
+```
+mkdir dir0
+```
+Then
+```
+ls
+```
+, you can see your directory
+
+### c6. remove file/directory
+To remove a file, you use `rm filename`
+```
+rm example.txt
+```
+to remove a directory, you use `rm -r directory`
+```
+rm -r dir0
+```
+Be careful, there is no `recycle bin` like windows. As long as you remove files/directory, you can not get it back.
+
 
