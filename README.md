@@ -61,4 +61,10 @@ rm -r dir0
 ```
 Be careful, there is no `recycle bin` like windows. As long as you remove files/directory, you can not get it back.
 
+Except these commands, please try your best to explore other linux command. For example,
+https://web.njit.edu/~alexg/courses/cs332/OLD/F2020/hand3f20/Linux-Tutorial.pdf
+https://www.youtube.com/watch?v=-DHCm9AlXvo
+
+
+
 
