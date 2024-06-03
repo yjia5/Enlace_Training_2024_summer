@@ -15,6 +15,7 @@ You can start a terminal to the login node through menue `Clustres` --> `_expans
 ![Alt text](Figures/Terminal.PNG)
 
 ### S3. Try these Linux shell commands
+To notice, you need to replace `YOUR_URSERNAME` with your ACCESS ID.
 #### c1. which directory you are at
 ```
 pwd
