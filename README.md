@@ -36,7 +36,7 @@ ls
 ```
 vi example.txt
 ```
-Then you open a file named example.txt. You can add contents into it by press `i`, which means insert. After you finish printig characters, press `Esc` to stop writing. Then you can save it by press `:w` followed by `Enter`， which means write. If you want to cancel your updates in the file, press `u`. Finally you can save it by pressing `:wq` (which means quit) followed by `Enter`. Or if you do not want to save the updates in the file, press `:q!` (which mean forcely quit) followed by `Enter`.
+Then you open a file named example.txt. You can add contents into it after pressing `i`, which means insert. After you finish printig characters, press `Esc` to stop writing. Then you can save it by press `:w` followed by `Enter`， which means write. If you want to cancel your updates in the file, press `u`. Finally you can save it by pressing `:wq` (which means quit) followed by `Enter`. Or if you do not want to save the updates in the file, press `:q!` (which mean forcely quit) followed by `Enter`.
 
 Please play around with vi editors to get familiar with it.
 
