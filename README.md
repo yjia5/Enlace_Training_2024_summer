@@ -20,13 +20,31 @@ To notice, you need to replace `YOUR_URSERNAME` with your ACCESS ID.
 ```
 pwd
 ```
-#### c2. change to the project/scratch directory
+#### c2. change to the home/project/scratch directory
+You should be provided with 3 directorys to save file:
+1. Home directory (~). This directory is allocated with limited storage, you can only save your source code and libraries here.
+```
+cd
+```
+or 
+```
+cd ~
+```
+
+2. Project directory
+This directory is designed to save your research data. But the data is only saved for 3 months. After 3 months, the data will be delected by system. You need to back up your data to your local drive or clouds.
 ```
 cd /expanse/lustre/projects/csd877/YOUR_URSERNAME
 ```
+3. scratch directory
+This directory is also designed to save small amount of research data. The number of files stored here is limited.
 ```
 cd /expanse/lustre/scratch/YOUR_URSERNAME/temp_project
 ```
+Different from Project directory, you can browse this directory directly from the web portal.
+
+![Alt text](Figures/scratch.PNG)
+
 ### c3. list all files under the directory
 
 ```
