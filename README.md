@@ -14,3 +14,30 @@ You can start a terminal to the login node through menue `Clustres` --> `_expans
 
 ![Alt text](Figures/Terminal.PNG)
 
+### S3. Try these Linux shell commands
+#### c1. which directory you are at
+```
+pwd
+```
+#### c2. change to the project/scratch directory
+```
+cd /expanse/lustre/projects/csd877/YOUR_URSERNAME
+```
+```
+cd /expanse/lustre/scratch/YOUR_URSERNAME/temp_project
+```
+### c3. list all files under the directory
+
+```
+ls
+```
+
+### c4. create a file with vi editor
+```
+vi example.txt
+```
+Then you open a file named example.txt. You can add contents into it by press `i`, which means insert. After you finish printig characters, press `Esc` to stop writing. Then you can save it by press `:w` followed by `Enter`， which means write. If you want to cancel your updates in the file, press `u`. Finally you can save it by pressing `:wq` (which means quit) followed by `Enter`. Or if you do not want to save the updates in the file, press `:q!` (which mean forcely quit) followed by `Enter`.
+
+Please play around with vi editors to get familiar with it.
+
+
