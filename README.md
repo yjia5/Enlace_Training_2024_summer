@@ -10,4 +10,7 @@ Log into Expanse with your ACCESS ID and password.
 ![Alt text](Figures/Login.PNG)
 
 ### S2. Start a terminal
-You can start a terminal to the login node through menue `Clustres` --> `_expanse Shell Access`
+You can start a terminal to the login node through menue `Clustres` --> `_expanse Shell Access`.
+
+![Alt text](Figures/Terminal.PNG)
+
