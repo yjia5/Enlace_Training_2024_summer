@@ -84,7 +84,7 @@ Since the job is running correctly, we can cancel the job and rerun it on `compu
 ```
 scancel JOB_ID
 ```
-Now here is the test for you. Please revise the submitting file change the queque's name from `debug` to `compute`. You can also require more `--ntasks-per-node` and `-t`. And then submit your job again.
+Now here is the test for you. Please revise the submitting file to change the queque's name from `debug` to `compute`. You can also require more `--ntasks-per-node` and `-t`. And then submit your job again.
 Here is the reference for you:
 https://www.sdsc.edu/support/user_guides/expanse#running
 
