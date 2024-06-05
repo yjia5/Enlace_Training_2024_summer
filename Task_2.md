@@ -38,3 +38,31 @@ This command is going to return a `JOB_ID` (integers). To check the status of th
 squeue -u YOUR_ID
 ```
 , which will list all jobs in the queque.
+
+### S4. Customize submitting script
+Submitting script is nothing but a buch of linux command (or shell language program). Let's read this file with `vi` eidtor
+```
+vi lammps.submit
+```
+Then you can see the contents of this file:
+```
+#!/bin/bash
+#SBATCH -A csd877                  # This is our project ID. Do not change this
+#SBATCH --job-name=Si              # job name, you can all anything you like
+#SBATCH --partition=debug          # queque's name. "debug" is a queque to debug your code. "compute" is the main computing queque
+#SBATCH --nodes=1                  # the number of node you require, 1 is enough for your following research
+#SBATCH --ntasks-per-node=2        # the number of cores for each node your require. 128 is maximum. Smaller value will give higher priority in the queque
+#SBATCH --cpus-per-task=1          # do not need to change this
+#SBATCH --output=Si.o%j.%N         # the name of standard output
+#SBATCH --export=ALL               # do not need to change this
+#SBATCH --constraint="lustre"      # do not need to change this
+#SBATCH -t 00:30:00                # maximum time to run this job you required. Smaller value will give higher priority in the queque
+
+module purge                       # load required libraries. Do not need to change the following 4 rows for your research
+module load slurm
+module load cpu/0.15.4  gcc/10.2.0 openmpi/4.0.4
+module load lammps/20200721-openblas
+
+mpirun -np 2 lmp < in.tersoff      # parallely run the code lmp, with in.tersoff file as the input. -np 2 means run on 2 cores (same value as --ntasks-per-node)
+```
+
