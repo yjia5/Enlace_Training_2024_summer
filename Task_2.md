@@ -11,6 +11,7 @@ pwd
 Q1: Do you still remember what these commands mean?
 
 ### S2: Copy a folder from my directory
+using `cp` (which mean copy) to copy a file or folder. To copy a folder, you need to add `-r` following `cp`, for example
 ```
 cp -r /expanse/lustre/projects/csd877/yjia3/share/lmp_Si_test ./
 ls
