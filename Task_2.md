@@ -19,7 +19,7 @@ Here I use `.` to represent CURRENT DIRECTORY.
 ```
 ls
 ```
-you should find a folder named `lmp_Si_test` under your 
+you should find a folder named `lmp_Si_test` under your own test directory
 
 ### S3. run lammps job
 ```
