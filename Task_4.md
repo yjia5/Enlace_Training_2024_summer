@@ -66,8 +66,8 @@ import lammps_logfile                          # load module
 import os                                      # load module
 print(os.getcwd())                             # show the current directory
 log = lammps_logfile.File("./log.lammps")      # read the file named log.lammps
-x = log.get("Step")                            # read the data in the column of "Step" and save into the variable x
-y = log.get("Temp")                            # read the data in the column of "Temp" and save into the variable y
+x = log.get("Step")                            # read the data in the colume of "Step" and save into the variable x
+y = log.get("Temp")                            # read the data in the colume of "Temp" and save into the variable y
 
 print(y)                                       # print out variable y
 print(len(x))                                  # print out the length of x
@@ -82,8 +82,12 @@ plt.show()                                     # show the figure
 You can find that this python code read the log file of lammps `log.lammps`. In specific this set of data
 ![image](https://github.com/yjia5/Enlace_Training_2024_summer/assets/53623594/cb6851a1-804e-48f3-b05c-07ddc4fa4873)
 
+The figure used the columes headed with `Step` and `Temp`. Now it is your turn to revise the script to plot a figure of `Step` VS `TotEng`. Please work together and plot these two figures and email to me.
 
 ### Step 4. Visualize 
+To visualize the trajectory of molecular dynamic simulations, you need to download the software OVITO (https://www.ovito.org/). Please install it to your own computer. 
+
+Then we need to download the file `dump.melt` to your own computer. As present above, you can copy it to scratch directory and download it through the portal.
 ### Step 5. Calculate RDF
 
 
