@@ -36,4 +36,4 @@ run             300000 # Will change in the future. Determine how many steps to 
 https://nanohub.org/resources/7570
 
 ### Step 3. Rerun lammps by changing parameters
-In the Task 2, you have tried to run this simulation. After learning the lammps input file, please change the ensemble to NPT, the starting temperature is 3000K and the final temperataure is also 3000K. The simulation will run only 20000 steps and for each 100 steps, output the trajectory and log file. Rerun the calculation and see what difference in the output file `log.lammps` and `dump.melt`
+In the Task 2, you have tried to run this simulation. After learning the lammps input file, please change the ensemble to NPT, the starting temperature is 3000K and the final temperataure is also 3000K. The simulation will run only 20000 steps and for each 100 steps, output the trajectory and log file. Rerun the calculation and see what changes in the output file `log.lammps` and `dump.melt` compared with the last run. To notice, firstly, save the output of last run. Otherwise, the new output can recover the old ones.
