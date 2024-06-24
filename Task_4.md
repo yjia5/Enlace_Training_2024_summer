@@ -58,6 +58,29 @@ cp step_temp.png /expanse/lustre/scratch/YOUR_URSERNAME/temp_project
 Then go to the expanse portal >> Files >> Scratch
 ![image](https://github.com/yjia5/Enlace_Training_2024_summer/assets/53623594/7b64c51f-2379-4735-bb78-48df0866787d)
 
+You should be able to find the file. You can open it in website or download it.
+
+Now let's understand what is writen in the python script step_temp.py
+```
+import lammps_logfile                          # load module
+import os                                      # load module
+print(os.getcwd())                             # show the current directory
+log = lammps_logfile.File("./log.lammps")      # read the file named log.lammps
+x = log.get("Step")                            # read the data in the column of "Step" and save into the variable x
+y = log.get("Temp")                            # read the data in the column of "Temp" and save into the variable y
+
+print(y)                                       # print out variable y
+print(len(x))                                  # print out the length of x
+import matplotlib.pyplot as plt                # import module
+plt.plot(x[2:]/1000,y[2:])                     # plot x vs y
+plt.xlabel("Time (ps)")                        # set up x label
+plt.ylabel("Temperature (K)")                  # set up y label
+plt.savefig("./step_temp.png")                 # save the figure into file step_temp.png
+plt.show()                                     # show the figure
+
+```
+
+
 ### Step 4. Visualize 
 ### Step 5. Calculate RDF
 
