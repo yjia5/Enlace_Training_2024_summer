@@ -26,7 +26,7 @@ read_data       pure-Si-444.lmp # Will change in the future. The file including 
 pair_style      tersoff # Will change in the future. Determine the force field used by the calculation. 
 pair_coeff      * * Si.tersoff Si # Will change in future. Determine the force field used by the calculation.
 timestep        1.0e-3 # Do not need to change in the future. The time length (0.0001 ps) of each step in the nuclei motion
-thermo          500 # Will change in the future. Determine the frequency of writing into an output file `log`
+thermo          500 # Will change in the future. Determine the frequency of writing into an output file `log.lammps`
 dump            1 all atom 1000 dump.melt # will change in the future. Determine the frequency of writing into an output file including the trajectory of nuclei `dump.melt`
 restart         10000 tmp.restart # will change in the future. Determine the frequency of writing a new restart file. Good habit for a long run.
 fix             24 all npt temp 300 3000 0.1 iso 1.0 1.0 1000 # will change in the future. Determine the ensemble of this calculation. For this perticular one, it is a NPT ensemble. The starting temperature is 300K. And the final temperature is 3000K. The pressure is 1.0 atm.
@@ -35,4 +35,5 @@ run             300000 # Will change in the future. Determine how many steps to 
 (3) If you want to know more about how the software works, read this small course
 https://nanohub.org/resources/7570
 
-## Step 3. Rerun lammps by changing parameters
+### Step 3. Rerun lammps by changing parameters
+In the Task 2, you have tried to run this simulation. After learning the lammps input file, please change the ensemble to NPT, the starting temperature is 3000K and the final temperataure is also 3000K. The simulation will run only 20000 steps and for each 100 steps, output the trajectory and log file. Rerun the calculation and see what difference in the output file `log.lammps` and `dump.melt`
