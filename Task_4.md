@@ -88,6 +88,10 @@ The figure used the columes headed with `Step` and `Temp`. Now it is your turn t
 To visualize the trajectory of molecular dynamic simulations, you need to download the software OVITO (https://www.ovito.org/). Please install it to your own computer. 
 
 Then we need to download the file `dump.melt` to your own computer. As present above, you can copy it to scratch directory and download it through the portal.
+
+Then you just need to open this `dump.melt` file by OVITO. You can see how the atoms move by pressing start butten (the triangle) at the right corner.
+![image](https://github.com/yjia5/Enlace_Training_2024_summer/assets/53623594/56f74d97-43d3-4368-b25f-adc7023c990a)
+
 ### Step 5. Calculate RDF
 
 
