@@ -1,12 +1,13 @@
-### Task 3
-## Step 1. Read Literature-Born–Oppenheimer approximation
+## Task 3. Learn Lammps
+
+### Step 1. Read Literature-Born–Oppenheimer approximation
 Did you watch the movie Oppenheimer? The fundation of molecular dynamic is built by J. Robert Oppenheimer. The main idea is that the electrons move much faster than nuclei. Therefore, when we consider about the motion of electrons, we believe the nuclei are fixed. On the other hand, if we consider about the motion of nuclei, we believe they are moving in the force field created by the electrons. As a result, the motion of electrons and nuclei are seperated and the whole complex system is divided into two smaller systems to study. More detailes can be read by the references or any book including Born-Oppenheimer approximation:
 
 https://en.wikipedia.org/wiki/Born%E2%80%93Oppenheimer_approximation
 
 Section 9-1 of book Physical Chemistry_A Molecular Approach (Donald A. McQuarrie, John D. Simon)
 
-## Step 2. Learn the parameters of lammps
+### Step 2. Learn the parameters of lammps
 Lammps (https://www.lammps.org/#gsc.tab=0) is a software implementing classical molecular dynamics, which means the quantum properties of nulcei are neglected and the force field exerted on the nuclei by electrons is modeled as a function of position of nuclei. Therefore, nuclei's motion is determined by Newton's second law, or say, the nuclei are classical particles. There are many parameters to set up in Lammps. For your research, you only need the ones I put into the input file `in.tersoff` provided in Task 2. To learn a software, the best way is to start from an example and read the document page of each parameter, which is the main content of this task.
 
 Here are simple instructions:
