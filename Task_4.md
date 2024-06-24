@@ -79,6 +79,8 @@ plt.savefig("./step_temp.png")                 # save the figure into file step_
 plt.show()                                     # show the figure
 
 ```
+You can find that this python code read the log file of lammps `log.lammps`. In specific this set of data
+![image](https://github.com/yjia5/Enlace_Training_2024_summer/assets/53623594/cb6851a1-804e-48f3-b05c-07ddc4fa4873)
 
 
 ### Step 4. Visualize 
