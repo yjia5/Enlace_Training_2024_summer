@@ -59,6 +59,18 @@ Copy the file `step_temp.py` under the tools directory
 ```
 cp tools/step_temp.py lammps/
 ```
+Using the singularity container to run python
+```
+srun --partition=debug  --pty --account="csd877" --nodes=1 --ntasks-per-node=2 --mem=8G -t 00:30:00 --wait=0 --export=ALL /bin/bash
+module load singularitypro
+singularity shell --bind /expanse/lustre/projects/csd877/YOUR_USER_NAME:/home/YOUR_USER_NAME/scratch /cm/shared/apps/containers/singularity/anaconda/anaconda3.sif
+```
+After running this, you are at your home directory, which is the default one for singularity container. The above command has link your `project` directory to your `scratch` folder we created under the home directory. To go to the `project` directory, 
+```
+cd scratch
+```
+Then you can find your `test` folder
+
 Go to lammps directory
 ```
 cd lammps
