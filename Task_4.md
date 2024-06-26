@@ -65,7 +65,7 @@ srun --partition=debug  --pty --account="csd877" --nodes=1 --ntasks-per-node=2 -
 module load singularitypro
 singularity shell --bind /expanse/lustre/projects/csd877/YOUR_USER_NAME:/home/YOUR_USER_NAME/scratch /cm/shared/apps/containers/singularity/anaconda/anaconda3.sif
 ```
-After running this, you are at your home directory, which is the default one for singularity container. The above command has link your `project` directory to your `scratch` folder we created under the home directory. To go to the `project` directory, 
+After running this, you are at your home directory, which is the default one for singularity container. The above command has linked your `project` directory to your `scratch` folder we created under the home directory. To go to the `project` directory, 
 ```
 cd scratch
 ```
