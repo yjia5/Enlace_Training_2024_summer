@@ -33,7 +33,7 @@ mkdir scratch
 ```
 ```
 module load singularitypro
-singularity shell --bind $/expanse/lustre/projects/csd877/YOUR_USER_NAME:/home/YOUR_USER_NAME/scratch /cm/shared/apps/containers/singularity/anaconda/anaconda3.sif
+singularity shell --bind /expanse/lustre/projects/csd877/YOUR_USER_NAME:/home/YOUR_USER_NAME/scratch /cm/shared/apps/containers/singularity/anaconda/anaconda3.sif
 ```
 To install packages we need for the following calculation:
 ```
