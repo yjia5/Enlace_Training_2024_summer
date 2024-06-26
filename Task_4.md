@@ -25,6 +25,16 @@ Then you should load python 3.8.5 to the envrionment. To check the version of py
 ```
 python --version
 ```
+
+Another way to load python environment
+make a directory named `scratch` under home directory
+```
+mkdir scratch
+```
+```
+module load singularitypro
+singularity shell --bind $/expanse/lustre/projects/csd877/YOUR_USER_NAME:/home/YOUR_USER_NAME/scratch $PYTHON3_CONTAINER
+```
 To install packages we need for the following calculation:
 ```
 pip install lammps_logfile matplotlib ase
