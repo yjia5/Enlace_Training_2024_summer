@@ -37,12 +37,12 @@ read_restart    ../1800/tmp.restart.9000000
 `../1800/tmp.restart.9000000` is the relative path to the restart file and `..` means the upper directory. Since we are going to firstly run the calculation of temperature 1825K, so you also need to change the temperature to 1825K.
 ```
 fix             24 all npt temp 1825 1825 0.1 iso 1.0 1.0 1000
-`
+```
 Then to submit multiple runs in once, you need the `run.sh` file and revise it accordingly. You only need to change these 3 lines.
+
 ```
 total=18000000 # change this one with the XXX value of the restart file
 temp=1825 # change this one with the first temperature to calculate
-
 for i in 1825 1850 # change this one with the temperatures you are going to calculate
 ```
 
