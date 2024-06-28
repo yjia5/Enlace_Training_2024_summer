@@ -15,7 +15,7 @@ cp -r /expanse/lustre/projects/csd877/yjia3/share/phase_diagram ./
 ls
 ```
 Then you should have your `phase_diagram` folder. 
-Omar plots the figures for the lower temperature one
+Omar plots the figures for the lower temperature one.
 Viridiana plots the figures for the higher temperature one.
 Put the results into the slides. You should also find the figure of RDF vivian has plotted under the folder, please also add them into your slides. If there is not such RDF figure, please plot it by yourselves.
 
