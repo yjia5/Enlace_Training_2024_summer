@@ -17,6 +17,12 @@ ls
 Then you should have your `phase_diagram` folder. 
 Omar plots the figures for the lower temperature one.
 Viridiana plots the figures for the higher temperature one.
+
+It needs to noticed that this time, you need to bind(mount) the scratch directory rather than the project directory when you run singularity container.
+```
+module load singularitypro
+singularity shell --bind /expanse/lustre/scratch/YOUR_USER_NAME/temp_project:/home/YOUR_USER_NAME/scratch /cm/shared/apps/containers/singularity/anaconda/anaconda3.sif
+```
 Put the results into the slides. You should also find the figure of RDF Vivian has plotted under the folder, please also add them into your slides. If there is not such a RDF figure, please plot it by yourselves.
 
 ### Step 3. More runs with the increament of temperatures
