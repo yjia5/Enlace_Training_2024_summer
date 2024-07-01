@@ -52,6 +52,15 @@ After you finish the revision. You can submit multiple jobs by just use the foll
 ./run.sh
 ```
 
+### Tip. Get supercell.
+You can use `Modifications` --> `Replicate` to get a supercell on the right panel of Ovito.
+![image](https://github.com/yjia5/Enlace_Training_2024_summer/assets/53623594/e9c55eff-ad61-4408-9ea2-82c185666d59)
+
+Then you can export this modified structure using `File` --> `Export File` --> `LAMMPS Dump File` (top left corner) to a new dump file.
+
+
+
+
 
 
 
