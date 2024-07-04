@@ -15,7 +15,7 @@ Firstly, you need to start an interactive job in case the memory provided by the
 ```
 srun --partition=debug  --pty --account="csd877" --nodes=1 --ntasks-per-node=2 --mem=8G -t 00:30:00 --wait=0 --export=ALL /bin/bash
 ```
-This command is going to require 1 node with 2 core in the queue named `debug`. The memory required is 8G for each core. And the time required is 30 min. You can change these parameters as you need.
+This command is going to require 1 node with 2 core in the queue named `debug`. The memory required is 8G for each core. And the time required is 30 min. You can change these parameters as you need. If you want to use the node for longer time, change the time `-t 00:30:00` you required. However, for partition `debug`, the job can only run for a limited time. If you really want to run long time job, change the partition from `debug` to `compute`.
 
 Before using python, you need to load python envrionment
 ```
